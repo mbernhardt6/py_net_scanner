@@ -11,7 +11,7 @@ import os
 output = "xml"
 folder = "/home/<user>/netscan/"
 newscan = folder + "newscan.xml"
-htmlreport = "/var/www/nmapscan.html"
+htmlreport = "/var/www/html/nmapscan.html"
 log = "/var/log/net_scanner.log"
 lock = folder + "lock"
 
