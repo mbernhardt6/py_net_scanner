@@ -1,6 +1,9 @@
 import subprocess
+import sys
 
 def nmapScan(subnet, output_type, output_file):
+  dev_null = open('/dev/null', 'w')
+  sys.stdout = dev_null
   stylesheet = "/home/<user>/netscan/nmap.xsl"
   if output_type == "xml":
     out_switch = "-oX"

@@ -36,10 +36,8 @@ if __name__ == "__main__":
       os.remove(lock)
       logger.logMessage(log, "Killing stale processes.")
       marklib.killProcess("nmap")
-      logger.logMessage(log, "Starting main scan.")
       runScan()
     else:
       logger.logMessage(log, "Lock file detected. Aborting. Age:%s seconds" % lockage)
   else:
-    logger.logMessage(log, "Starting main scan.")
     runScan()
